@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+aside {
+    background-color: #f8f9fa;
+    padding: 10px;
+    width: 200px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    padding: 8px 0;
+}
+
+nav li.active {
+    font-weight: bold;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.options label {
+    margin-right: 20px;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.questionnaire h2 {
+    text-align: center;
+    color: #333;
+}
+
+.questionnaire p {
+    text-align: center;
+    color: #666;
+}
+
+.question-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.question-box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.options input[type="radio"] {
+    margin-right: 5px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 1em;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 0.5em;
+    color: #007bff;
+}

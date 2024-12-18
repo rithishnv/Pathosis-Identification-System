@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a, .menu select {
+    color: white;
+    margin-left: 1em;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+aside {
+    width: 200px;
+    background-color: #f8f9fa;
+    padding: 1em;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside li {
+    margin: 1em 0;
+}
+
+aside li.active {
+    font-weight: bold;
+}
+
+.content {
+    flex: 1;
+    padding: 2em;
+}
+
+.symptom-input {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.symptom-input input {
+    flex: 1;
+    padding: 0.5em;
+    margin-right: 1em;
+}
+
+.symptom-input button {
+    padding: 0.5em;
+}
+
+#symptoms {
+    margin-bottom: 1em;
+}
+
+.symptom {
+    display: inline-block;
+    background-color: #e9ecef;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border-radius: 5px;
+}
+
+.symptom button.remove {
+    background: none;
+    border: none;
+    color: red;
+    margin-left: 0.5em;
+}
+
+.instruction {
+    margin-bottom: 1em;
+}
+
+.human-figure {
+    margin-bottom: 1em;
+}
+
+.human-figure img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 1em;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 0.5em;
+    color: #007bff;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pathos</title>
+    <link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Pathosis Prediction</h1>
+        <div class="menu">
+        </div>
+    </header>
+    <main>
+        <aside>
+            <ul>
+                <li>Patient</li>
+                <li class="active">Symptoms</li>
+                <li>Questionnaire</li>
+                <li>Results</li>
+            </ul>
+        </aside>
+        <form action="home" method="post">
+            <section class="content">
+                <h2>Add your symptom</h2>
+                <div class="symptom-input">
+                    <input list="symptoms1" id="symptomSearch" name="name" placeholder="Search, e.g., headache">
+                    <datalist id="symptoms1">
+                        <option value="Eye Pain"></option>
+                        <option value="Leg Pain"></option>
+                        <option value="Headache"></option>
+<!--                        <option value="Chest Discomfort">chest discomfort/pain</option>-->
+                    </datalist>
+                </div>
+                <div id="symptoms">
+
+                </div>
+                <p class="instruction"></p>
+                <button id="nextButton">Next</button>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <p>Pathosis Identification System</p>
+    </footer>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>

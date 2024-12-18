@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pathosis</title>
+    <link rel="stylesheet" href="qstyle.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Pathosis Prediction</h1>
+    </header>
+    <main>
+        <aside>
+            <nav>
+                <ul>
+                    <li>Patient</li>
+                    <li>Symptoms</li>
+                    <li class="active">Questionnaire</li>
+                    <li>Results</li>
+                </ul>
+            </nav>
+        </aside>
+        <section>
+            <h2>Do any of the following statements apply to you?</h2>
+            <div class="questionnaire">
+                <p>Select one answer in each row</p>
+                <form id="questionnaire-form" action="res1" method="get">
+                    <div class="question-box">
+                        <label>1. Do you have a limited range of motion in your leg?</label>
+                        <div class="options">
+                            <input type="radio" id="injury-yes" name="q1" value="yes" required>
+                            <label for="injury-yes">Yes</label>
+                            <input type="radio" id="injury-no" name="q1" value="no">
+                            <label for="injury-no">No</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="question-box">
+                        <label>2. Type of leg pain/discomfort experienced</label>
+                        <div class="options">
+                            <input type="radio" id="stinging" name="q2" value="knee pain" required>
+                            <label for="stinging">Knee pain</label>
+                            <input type="radio" id="burning" name="q2" value="muscle pain">
+                            <label for="burning">Muscle pain</label>
+                            <input type="radio" id="irritation" name="q2" value="pins and needles">
+                            <label for="burning">Pins and Needles</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="question-box">
+                        <label>3. Having lower leg pain after engaging in physical activity /exercise?</label>
+                        <div class="options">
+                            <input type="radio" id="injury-related-yes" name="q3" value="yes" required>
+                            <label for="injury-related-yes">Yes</label>
+                            <input type="radio" id="injury-related-no" name="q3" value="no">
+                            <label for="injury-related-no">No</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="question-box">
+                        <label>4. Do you experience swelling in your leg?</label>
+                        <div class="options">
+                            <input type="radio" id="headache-yes" name="q4" value="yes" required>
+                            <label for="headache-yes">Yes</label>
+                            <input type="radio" id="headache-no" name="q4" value="no">
+                            <label for="headache-no">No</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="question-box">
+                        <label>5. Is there sensitivity to touch in the affected area?</label>
+                        <div class="options">
+                            <input type="radio" id="redness-yes" name="q5" value="yes" required>
+                            <label for="redness-yes">Yes</label>
+                            <input type="radio" id="redness-no" name="q5" value="no">
+                            <label for="redness-no">No</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="question-box">
+                        <label>6. Have you recently suffered an injury?</label>
+                        <div class="options">
+                            <input type="radio" id="tearing-yes" name="q6" value="yes" required>
+                            <label for="tearing-yes">Yes</label>
+                            <input type="radio" id="tearing-no" name="q6" value="no">
+                            <label for="tearing-no">No</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</div>
+<footer>
+    <p>Pathosis Identification System</p>
+</footer>
+</body>
+</html>
